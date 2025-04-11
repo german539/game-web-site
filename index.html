@@ -17,8 +17,8 @@
                     <li class="active"><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Porfolio</a></li>
-                    <li><a href="https://stopgame.ru/news">News</a></li>
-                    <li class="btn"><a href="https://t.me/xxxmanraas">Contact</a></li>
+                    <li><a href="https://stopgame.ru/news" target="News">News</a></li>
+                    <li class="btn"><a href="https://t.me/xxxmanraas" target="Contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -146,15 +146,8 @@
             <div>
                 <span class="logo">Оганесян Г.А.</span>
                 <p>Сделано с трудом!</p>
-            </div>
-            <div>
-                <h4>Про нас</h4>
-                <ul>
-                    <li>Portfolio</li>
-                    <li>Careers</li>
-                    <li>Contact us</li>       
-                </ul>
-            </div>
+            </div>    
+
             <div>
                 <h4>Наши контакты</h4>
                 <p>Россия, Ставрополь, улица Мира, 347, корп. 6</p>
@@ -171,8 +164,8 @@
     <script>
         function checkEmail() {
             let email = document.querySelector('#emailField').value;
-            if(!email.includes('@')) alert('Нет символа @')
-            else if(!email.includes('.')) alert('Нет символа .')
+            if(!email.includes('@')) alert('Ошибка! Попробуйте заново')
+            else if(!email.includes('.')) alert('Ошибка! Попробуйте заново')
             else alert('Все отлично!')
         }
     </script>
